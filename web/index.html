@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>My Personal Profile</title>
+
+    <style>
+        
+        body {
+            background-color: #e6f5ff;
+            font-family: Times New Roman;
+            text-align: center;
+        }
+
+        h1 {
+            color: #5686a8;
+        }
+
+        label {
+            color: #e69ab9;
+            display: block;
+            text-align: left;
+        }
+        
+        input, textarea {
+            display: block;
+            margin-top: 5px;
+            padding: 5px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        
+        form {
+            background-color: white;
+            width: 350px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+        
+        button {
+            padding: 8px;
+            color: #d783a7;
+        }
+    
+    </style>
+
+</head>
+
+<body>
+
+    <h1>My Personal Profile</h1>
+
+    <form action="ProfileServlet" method="post">
+
+        <label>Name:</label>
+        <input type="text" name="name" required>
+        <br>
+
+        <label>Student ID:</label>
+        <input type="text" name="studentId" required>
+        <br>
+
+        <label>Programme:</label>
+        <input type="text" name="programme" required>
+        <br>
+
+        <label>Email:</label>
+        <input type="email" name="email" required>
+        <br>
+
+        <label>Hobbies:</label>
+        <input type="text" name="hobbies" required>
+        <br>
+
+        <label>Short Self-Introduction:</label>
+        <textarea name="introduction" required></textarea>
+        <br>
+
+        <button type="submit">Submit Profile</button>
+
+    </form>
+
+</body>
+</html>
